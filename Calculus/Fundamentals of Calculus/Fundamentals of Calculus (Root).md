@@ -1,0 +1,10 @@
+#Root #Root2 Section: [[Calculus (Root)]]
+## [[Sets and Functions]]
+## [[Proof]]
+## [[Differentiation]]
+## [[(WIP) Multivariate Functions]]
+## [[(TBD) Multivariate Extrema]]
+## [[(TBD) Automatic Differentiation]]
+## [[(TBD) Vector Valued Functions]]
+## [[(TBD) Exponential, Logarithmic and Hyperbolic Functions]]
+
