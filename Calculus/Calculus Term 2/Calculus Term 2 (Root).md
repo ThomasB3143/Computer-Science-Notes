@@ -1,4 +1,5 @@
 #Root #Root2 Section: [[Calculus (Root)]]
-## [[Series (Root)]]
-## [[(TBD) Integration]]
-## [[(TBD) Lagrange Multipliers]]
+# [[Series (Root)]]
+# [[Integration]]
+# [[Lagrange Multipliers]]
+# [[(WIP) Fourier Series]]

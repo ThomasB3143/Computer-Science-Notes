@@ -1,12 +1,12 @@
 Section: [[Series (Root)]]
 
 A series is the **sum** of a sequence, not the sequence itself (that is an ordered countably infinite set of numbers)
-## Know Your Limits!
+# Know Your Limits!
 
 For a sequence to converge to a limit $L$ (so $\lim\limits_{n\rightarrow\infty}a_n=L$):
 
 $\forall\epsilon,\exists N\in\mathbb{N}:\forall n>N,|a_n-L|<\epsilon$        
-## Series Value
+# Series Value
 
 Far an infinite series we can define the partial sum:
 
@@ -16,12 +16,12 @@ $R_n=\sum\limits^\infty_{r=n+1}a_r=a_{n+1}+a{n+2}+\dots$
 
 The series is convergent to a finite value $S$ if:
 $\lim\limits_{n\rightarrow\infty}S_n=S$ or $\lim\limits_{n\rightarrow\infty}R_n=0$ since $R_n=S-S_n$
-## Sums and Differences of Series
+# Sums and Differences of Series
 
 If the series' $\sum\limits^\infty_{n=0}a_n$ and $\sum\limits^\infty_{n=0}b_n$ converge, with respective sums $A$ and $B$ then:
 
 $\sum\limits^\infty_{n=0}(a_n+b_n)=A+B$ and $\sum\limits^\infty_{n=0}(a_n-b_n)=A-B$
-## First Test for Divergence
+# First Test for Divergence
 
 $\boxed{\text{If }\lim\limits_{n\rightarrow\infty}a_n\neq0\text{ then the series }\sum\limits^\infty_{n=0}a_n\text{ diverges}}$
 
@@ -36,7 +36,7 @@ $2\epsilon>|S_n-S|+|S_{n+1}-S|\geq|S_{n+1}-S|=|a_{n+1}|$
 Well $\epsilon$ is arbitrary, so we know that for any $\epsilon^\prime>0$ there exists an $N$ such that $|a_n|<\epsilon^\prime$ for all $n>N$. This means that: 
 
 $\lim\limits_{n\rightarrow\infty}|a_n|=0\therefore\lim\limits_{n\rightarrow\infty}a_n=0$
-## Absolute Convergence Implies Convergence
+# Absolute Convergence Implies Convergence
 
 $\boxed{\text{If }\sum\limits^\infty_{n=1}|a_n|\text{ converges then }\sum\limits^\infty_{n=1}a_n\text{ converges}}$  
 Proof:
@@ -50,13 +50,13 @@ But we know that $\lim\limits_{n\rightarrow\infty}T_n=T$ exists so:
 $0\leq\lim\limits_{n\rightarrow\infty}(S_n+T_n)\leq 2T$ so the series $\lim\limits_{n\rightarrow\infty}(a_n+|a_n|)$ converges. Using the [[Introduction to Series#Sums and Differences of Series|"Difference of Convergent Series" Theorem]] we can show that:
 
 $\sum\limits^\infty_{n=1}(a_n+|a_n|)-\sum\limits^\infty_{n=1}|a_n|=\sum\limits^\infty_{n=1}a_n$ also converges
-## Comparison Test
+# Comparison Test
 
 These are fundamental rules used to prove all of our other convergence tests.
-### Convergence
+## Convergence
 
 Let $\sum\limits^\infty_{n=1}b_n$ be a convergent series of positive terms and let $\sum\limits^\infty_{n=1}a_n$ be a series. If there exists and integer $N$ such that $\forall n>N,|a_n|\leq b_n$ then $\sum\limits^\infty_{n=1}a_n$ is an absolutely convergent series
-### Divergence
+## Divergence
 
 Let $\sum\limits^\infty_{n=1}b_n$ be a divergent series of positive terms and let $\sum\limits^\infty_{n=1}a_n$ be a series. If there exists and integer $N$ such that $\forall n>N,0\leq b_n\leq a_n$ then $\sum\limits^\infty_{n=1}a_n$ is a divergent series
 ## Ratio Test

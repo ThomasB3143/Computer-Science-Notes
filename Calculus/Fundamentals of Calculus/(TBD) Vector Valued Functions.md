@@ -1,1 +1,0 @@
-#tbd Section: [[Fundamentals of Calculus (Root)]]
