@@ -15,9 +15,9 @@ A system consists of resources:
 ## Characterising Deadlock
 
 - **Mutual exclusion** - only one process at a time can use a resource
-- Hold and wait - a process is holding at least one resource, and waiting to acquire additional resources held by other processes
-- No pre-emption - a resource can be released only voluntarily by the process holding it
-- Circular wait - There exists a set of waiting resources such that each resource is waiting on another resource in a way that forms a cycle
+- **Hold and wait** - a process is holding at least one resource, and waiting to acquire additional resources held by other processes
+- **No pre-emption** - a resource can be released only voluntarily by the process holding it
+- **Circular wait** - There exists a set of waiting resources such that each resource is waiting on another resource in a way that forms a cycle
 
 When all four of these arise, deadlock CAN occur
 

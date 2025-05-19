@@ -7,10 +7,17 @@ Hence the MIPS address space spans $2^{32}$ bytes or about 4GB
 Word addresses are always divisible by 4 (two least significant bits are 0)
 
 Here is the blessed **memory map**
+
 ![[Pasted image 20250329183107.png]]
 ## Text
 
-This segment stores the machine language program with roughly 256MB of code. The four most significant bits are 0 This is why the [[Introduction to MIPS#J-type|j]] instruction only needs 26 bits to reference a word address
+This segment stores the machine language program with roughly 256MB of code, where the four most significant bits are 0. A [[Introduction to MIPS#J-type|J-type]] instruction only needs 26 bits for the word address instead of 32 because:
+
+- The first four bits are known to be 0
+- The last two bits are always 0 (because all words begin at an address divisible by 4)
+	- Because the address refers to a byte in memory
+	- Words are four bytes long
+	- We only reference the start of a word
 ## Global Data
 
 This section stores global variables, accessed using the [[Introduction to MIPS#Registers|$gp]] pointers
@@ -45,6 +52,6 @@ In **direct addressing**, we'd specify an address in the instruction. MIPS does 
 
 MIPS uses pseudo-direct addressing in [[Introduction to MIPS#J-type|J-type]], calculating the new value of the PC as follows:
 
-- The two least significant bits are 0 (instructions are word aligned and 4 bytes long)
+- The two least significant bits are 0 (instructions are word-aligned and 4 bytes long)
 - The next 26 bits are taken from the "addr" field of the J-type instruction
-- The four most significant bits are again 0 (recall [[Memory Map and Addressing Modes#Text]])
+- The four most significant bits are again 0 (recall [[Memory Map and Addressing Modes#Text|this]])

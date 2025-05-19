@@ -81,7 +81,7 @@ From this we can deduce the following:
 
 - $w_i=0\iff i$ has lost at least one comparison
 - Weight of an element will at most double after comparison
-- If the max is involved in $m$ comparisons, its wright is $\leq2^m$
+- If the max is involved in $m$ comparisons, its weight is $\leq2^m$
 - In the end, the max accumulates all the weight, so $n\leq 2^m$
 - Now $\log_2n\leq m$
 - This means the adversary can force $\lceil\log_2n\rceil$ comparisons with the max, proving the theorem

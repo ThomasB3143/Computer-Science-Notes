@@ -1,4 +1,4 @@
-Section: [[Graph Theory and Algorithms (Root)]]
+  Section: [[Graph Theory and Algorithms (Root)]]
 
 Suppose we have a graph with a **weight** or **cost** for each edge. There are often times where we want to find the subset of edges that keeps the graph [[Paths, Cycles and Trees#Connectivity|connected]] with the **lowest overall cost**. This is always a [[Trees and Forests#Spanning Trees|spanning tree]], as to have a [[Paths, Cycles and Trees#Cycle|cycle]] means there exists an edge which can be removed whilst remaining connected. The **minimum spanning tree** must have the following properties:
 

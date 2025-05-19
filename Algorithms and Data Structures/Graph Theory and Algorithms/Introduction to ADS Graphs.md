@@ -28,7 +28,7 @@ A **subgraph** $G^\prime=(V^\prime,E^\prime)$ of $G=(V,E)$ is a graph where $V^\
 ##### Proper Subgraph
 A [[Introduction to ADS Graphs#Subgraph|subgraph]] $G^\prime$ where $G^\prime\neq G$ 
 ##### Spanning Subgraph
-A [[Introduction to ADS Graphs#Subgraph|subgraph]] $G^\prime=(V^\prime,E^\prime)$ where $V^\prime\neq V$ 
+A [[Introduction to ADS Graphs#Subgraph|subgraph]] $G^\prime=(V^\prime,E^\prime)$ where $V^\prime= V$
 ##### Induced Subgraph
 A [[Introduction to ADS Graphs#Subgraph|subgraph]] $G^\prime=(V^\prime,E^\prime)$ where $G^\prime$ contains **all** edges of $E$ where the two vertices are in $V^\prime$. This means we are simply removing the vertices and any edges connected to them, and nothing else
 # Types of Graphs
@@ -61,7 +61,7 @@ The smallest set of [[Introduction to ADS Graphs#Independent Set|independent set
 For a [[Introduction to ADS Graphs#Directed Graphs|directed graph]], a set of vertices that have an edge directed towards **every other** vertex in the graph
 ## Minimum Dominating Set
 
-The largest [[Introduction to ADS Graphs#Dominating Set|dominating set]] for a given graph
+The smallest [[Introduction to ADS Graphs#Dominating Set|dominating set]] for a given graph
 # Handshaking
 
 >[!quote] Theorem

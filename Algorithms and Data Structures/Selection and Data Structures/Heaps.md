@@ -94,3 +94,9 @@ for i = length(A) down to 2
 	HeapSize(A) = Heapsize(A) - 1
 	Heapify(A,1,HeapSize(A))
 ```
+
+1. Call [[#BuildHeap]]
+2. For $i$ from the length of the array to $2$
+	1. Swap $A[i]$ and $A[1]$ (the root)
+	2. Decrement the heapsize to ignore the node we just swapped in any future [[#Heapify]] calls
+	3. Call [[#Heapify]] on the root to restore the heap properties (whilst ignoring the nodes we've sorted)

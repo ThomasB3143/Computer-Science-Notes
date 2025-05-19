@@ -55,7 +55,7 @@ Suppose we want to retrieve the first and last name of each staff member earning
 $$\Pi_{\text{firstName, lastName}}(\sigma_{salary>40000}(\text{Staff}))$$
 ### Union
 
-- $A\cap B$
+- $A\cup B$ 
 	- Binary operation on two relations
 	- Selects tuples that are in A or B and adds them together into a new relation
 	- REMOVES DUPLICATES (its a set)

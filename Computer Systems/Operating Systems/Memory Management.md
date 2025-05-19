@@ -149,7 +149,7 @@ A valid/invalid bit is associated with each process's page table entry to show i
 - If invalid:
 	- Terminate process
 	- Clear previously allocated main memory
-	- Throw and error
+	- Throw an error
 - If valid
 	- If page is allocated a frame then all is good
 	- Otherwise, we have a **page fault trap**:
@@ -233,7 +233,7 @@ This refers to when a process is spending more time paging than doing actual wor
 We can fix this with...
 ## Prepaging
 
-Page into memory ,at one time, all the pages that will be needed
+Page into memory, at one time, all the pages that will be needed
 ![[Pasted image 20250405221546.png]]
 We keep with a process a list of pages in its working set model. When a process is suspended we remember the working set so we can bring the whole set into memory when the process resumes. This prevents thrashing so long as the cost of prepaging is less than the cost of servicing page faults
 
