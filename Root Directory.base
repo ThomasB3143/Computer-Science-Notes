@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.ext != "png"
+    order:
+      - file.name
+      - file.folder
