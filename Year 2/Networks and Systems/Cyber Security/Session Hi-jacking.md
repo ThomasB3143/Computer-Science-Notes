@@ -1,4 +1,4 @@
-#wip Section: [[Cyber Security (Root)]]
+Section: [[Cyber Security (Root)]]
 # Cookie
 
 - Stores information on local host
